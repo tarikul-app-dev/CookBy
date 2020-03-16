@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainPageAct"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/txv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOMEMADE FOOD"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/txv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cookby is Platform for homemade
+            food which is fresh"
+            android:textSize="18sp"
+            android:layout_below="@+id/txv_title"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_btn_log"
+            android:fontFamily="sans-serif-light"
+            android:hint="LOGIN"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/color_white"
+            android:textSize="@dimen/text_size"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_btn_log"
+            android:fontFamily="sans-serif-light"
+            android:hint="Register"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/color_white"
+            android:textSize="@dimen/text_size"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

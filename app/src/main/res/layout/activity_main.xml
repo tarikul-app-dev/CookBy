@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_log"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar_color"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="Login"
+        app:titleTextColor="#fff"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="15dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <net.colindodd.gradientlayout.GradientRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            gl:start_color="@color/gradientLightYellow"
+            gl:end_color="@color/gradientOrange"
+            gl:orientation="LEFT_RIGHT"
+            android:padding="05dp">
+
+            <TextView
+                android:id="@+id/textViewSub2Title"
+                android:text="Physics"
+                style="@style/viewParent.headerText.HomeCardTitle" />
+
+            <TextView
+                android:text="Study nature, love nature,\nclose to nature"
+                style="@style/viewParent.headerText.homeCardContent"
+                android:layout_below="@id/textViewSub2Title"/>
+
+        </net.colindodd.gradientlayout.GradientRelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardPreventCornerOverlap="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <net.colindodd.gradientlayout.GradientRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                gl:start_color="@color/gradientLightYellow"
+                gl:end_color="@color/gradientOrange"
+                gl:orientation="LEFT_RIGHT"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:text="Physics"
+                    style="@style/viewParent.headerText.HomeCardTitle" />
+
+                <TextView
+                    android:text="Study nature, love nature,\nclose to nature"
+                    style="@style/viewParent.headerText.homeCardContent"
+                    android:layout_below="@id/text2"/>
+
+            </net.colindodd.gradientlayout.GradientRelativeLayout>
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
